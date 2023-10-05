@@ -10,13 +10,13 @@ source:
   sha256: 694a8e44c87657c59292ede72891eb91d34131f6531463aab3009191c77364a8
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - flit-core 3.8.0
+    - flit-core 3
     - pip
     - python
     - wheel
